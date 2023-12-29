@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a0ce24446b.js" crossorigin="anonymous"></script>"
+</head>
+<body>
+<div id="header">
+<div class="container">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+    </nav>
+    <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi, I'm <span>Web developer</span><br>Kevin B.Watson</h1>
+    </div>
+</div>
+</div> 
+<!------------about------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+               <img src="port img/port.png.jpg">
+            </div>
+            <div class="about-col-2">
+            <h1 class="sub-title">ABOUT ME</h1>
+            <p>The web developer is responsible for planning and developing software solutions and 
+                web applications,supporting and maintaining a company’s websites and digital products. 
+                The day-to-day work of the web developer highly depends on constantly evolving internet 
+                innovations.Providing a targeted web developer job description and salary range information can help you attract top talent.</p>
+
+                 <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                      <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                      <p class="tab-links" onclick="opentab('education')">Eduction</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web developmnt</span><br>Designing Web/App interface</li>
+                        <li><span>App development</span><br>Building Android Apps</li>
+                     </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021-Current</span><br>Team lead at starapp LLC.</li>
+                        <li><span>2017-2019</span><br>Internship at ekart ecommerce.</li>
+                     </ul>
+                     
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016</span><br>MBA from MIT Mumbai.</li>
+                        <li><span>2016</span><br>BBA from ISM Mumbai.</li>
+                     </ul> 
+                </div>
+             </div>
+            </div>
+    </div>
+</div>
+<!---------------services--------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services </h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>Web Design</h2>
+                <p>The best web developers are in high demand and have plenty of options to choose from. 
+                    Therefore, it’s important to create a professional web developer job description that stands out among its competitors. 
+                    Put your hard work to the test with a free job post from Monster.</p>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>The best web developers are in high demand and have plenty of options to choose from. 
+                    Therefore, it’s important to create a professional web developer job description that stands out among its competitors. 
+                    Put your hard work to the test with a free job post from Monster.</p>
+                    <a href="#">learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-------------------portfolio---------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="port img/img1.jpg">
+                <div class="layer">
+                    <h3>Social Network App</h3>
+                    <p>Social media are interactive technologies that facilitate the creation and sharing of content, ideas,
+                         interests, and other forms of expression through virtual communities.:</p>
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="port img/img2.jpg">
+                <div class="layer">
+                    <h3>Social Map App</h3>
+                    <p>Social media are interactive technologies that facilitate the creation and sharing of content, ideas,
+                         interests, and other forms of expression through virtual communities.:</p>
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="coltact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> contact@kevin.W.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> 012345789</p>
+                <div class="social-icons"> 
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
