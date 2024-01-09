@@ -1,0 +1,105 @@
+body{
+  background-image: url('./background\ img.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 35%;
+}
+.logo{
+  display: flex;
+  justify-content: space-between;
+}
+.title{
+  justify-content: center;
+  display: flex;
+  font-size: 70px;
+}
+.title1{
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+}
+.btn{
+  border-radius: 15px;
+  background-color: green;
+  text-decoration: none;
+  padding: 10px;
+  border: none;
+  justify-content: center;
+  margin-left: 45%;
+}
+.btn2
+{
+border-radius: 15px;
+background-color: green;
+text-decoration: none;
+padding: 10px;
+border: none;
+justify-content: center;
+margin-left: 12%;
+}
+.btn4
+{
+border-radius: 15px;
+background-color: green;
+text-decoration: none;
+padding: 10px;
+border: none;
+justify-content: center;
+margin-left: 1%;
+}
+.middle{
+display: flex;
+justify-content: center;
+margin-top: 23%;
+}
+.middlehead{
+margin-left: 5%;
+}
+.right{
+display: flex;
+justify-content: center;
+}
+.vpn
+{
+display: flex;
+justify-content: center;
+}
+.btn6{
+border: none;
+}
+.para{
+text-decoration: underline;
+color: green;
+}
+.vpv3{
+margin-left: 8%;
+}
+.xyz{
+display: flex;
+justify-content: center;
+}
+.last2{
+margin-top: 1.1%;
+margin-left: 3.5%;
+}
+.last3{
+margin-top: 1.1%;
+margin-left: 3.5%;
+}
+.para1{
+text-decoration: underline;
+color: green;
+text-align: center;
+}
+.lstimg{
+position: relative;
+width: 1150px;
+height: 100px;
+}
+.lastcontain{
+position: absolute;
+width: 1000px;
+height: 200px;
+}
+.loc{
+text-align:right;
+}
